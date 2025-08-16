@@ -1,7 +1,7 @@
 # MethDevALV
 
 <div align="center">
-  <img src="https://pub-ce3d0244548c433e95b2def1395a0e7a.r2.dev/MethDevLogo.gif" alt="MethDevALV Banner" width="100%" style="border-radius:10px;"/>
+  <img src="https://s14.gifyu.com/images/bNjds.gif" alt="MethDevALV Banner" width="100%" style="border-radius:10px;"/>
 </div>
 
 <h1 align="center">
