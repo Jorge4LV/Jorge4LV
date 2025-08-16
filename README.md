@@ -1,13 +1,17 @@
-# MethDevALV
+
 
 <div align="center">
-  <img src="https://s14.gifyu.com/images/bNjds.gif" alt="MethDevALV Banner" width="100%" style="border-radius:10px;"/>
+  <img src="https://github.com/user-attachments/assets/34e25626-6515-46a0-bb35-753e2c2ff25b" alt="MethDevALV Banner" width="100%" style="border-radius:10px;"/>
 </div>
 
 <h1 align="center">
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" width="30"/>
   <span style="color:#9b87f5">MethDevALV</span>
 </h1>
+
+<div align="center">
+  <img src="./assets/methdev-banner.svg" width="100%" alt="MethDevALV Banner"/>
+</div>
 
 <p align="center">
   <a href="#english">English</a> |
