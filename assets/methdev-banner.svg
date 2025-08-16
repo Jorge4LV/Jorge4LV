@@ -72,7 +72,7 @@
   <g transform="translate(80,115)">
     <text class="title" x="0" y="0" fill="white">MethDev<tspan fill="url(#neonGrad)">ALV</tspan></text>
     <text class="subtitle muted" x="0" y="34">Fullstack • Discord • Real-Time • APIs • UI/UX Neon</text>
-    <text class="mono" x="0" y="58" fill="#94A3B8">Jorge4LV — Building secure, scalable & elegant systems</text>
+    <text class="mono" x="0" y="58" fill="#94A3B8">Jorge4LV — Building secure, scalable and elegant systems</text>
   </g>
 
   <!-- Scrolling skills ticker -->
