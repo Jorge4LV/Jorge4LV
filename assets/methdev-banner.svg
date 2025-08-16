@@ -1,0 +1,200 @@
+<!-- assets/methdev-banner.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="MethDevALV Banner">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0F1A"/>
+      <stop offset="100%" stop-color="#0A0D14"/>
+    </linearGradient>
+
+    <!-- Animated neon gradient for strokes/fills -->
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6">
+        <animate attributeName="stop-color" values="#8B5CF6; #22D3EE; #8B5CF6" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE; #8B5CF6; #22D3EE" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Soft glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Floating neon orbs -->
+    <radialGradient id="orbPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Skill chip style -->
+    <style>
+      .title { font: 800 54px/1.1 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial; letter-spacing: 0.5px; }
+      .subtitle { font: 600 18px/1.2 ui-sans-serif, system-ui, Segoe UI, Roboto; opacity: .9; }
+      .chipText { font: 600 16px/1 ui-sans-serif, system-ui, Segoe UI, Roboto; }
+      .mono { font: 700 12px/1 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; letter-spacing: 1px; }
+      .muted { fill: #A5B4FC; opacity: .85; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bg)"/>
+
+  <!-- Decorative diagonal neon lines -->
+  <g opacity="0.18" filter="url(#glow)">
+    <path d="M-50 300 L250 0" stroke="url(#neonGrad)" stroke-width="3"/>
+    <path d="M150 330 L450 30" stroke="url(#neonGrad)" stroke-width="2"/>
+    <path d="M950 360 L1250 60" stroke="url(#neonGrad)" stroke-width="2"/>
+  </g>
+
+  <!-- Floating orbs -->
+  <g filter="url(#glow)">
+    <circle cx="230" cy="80" r="110" fill="url(#orbPurple)">
+      <animate attributeName="cy" values="70;90;70" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="220;240;220" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="230" r="130" fill="url(#orbCyan)">
+      <animate attributeName="cy" values="220;240;220" dur="6.5s" repeatCount="indefinite"/>
+      <animate attributeName="cx" values="990;1010;990" dur="7.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Title & subtitle -->
+  <g transform="translate(80,115)">
+    <text class="title" x="0" y="0" fill="white">MethDev<tspan fill="url(#neonGrad)">ALV</tspan></text>
+    <text class="subtitle muted" x="0" y="34">Fullstack • Discord • Real-Time • APIs • UI/UX Neon</text>
+    <text class="mono" x="0" y="58" fill="#94A3B8">Jorge4LV — Building secure, scalable & elegant systems</text>
+  </g>
+
+  <!-- Scrolling skills ticker -->
+  <clipPath id="tickerClip">
+    <rect x="80" y="200" width="1040" height="44" rx="10"/>
+  </clipPath>
+
+  <g transform="translate(80,200)" clip-path="url(#tickerClip)">
+    <!-- Track -->
+    <rect x="0" y="0" width="1040" height="44" rx="10" fill="rgba(148,163,184,0.08)" stroke="rgba(139,92,246,0.35)"/>
+
+    <!-- Moving lane -->
+    <g id="lane" filter="url(#glow)">
+      <!-- We’ll duplicate the sequence so it loops smoothly -->
+      <g>
+        <!-- chips row 1 -->
+        <g transform="translate(0,0)">
+          <!-- helper function-like repetition: each chip = rounded rect + label -->
+          <g transform="translate(14,8)">
+            <rect width="130" height="28" rx="14" fill="rgba(139,92,246,.15)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="65" y="19" text-anchor="middle" fill="#E9E7FF">React</text>
+          </g>
+          <g transform="translate(158,8)">
+            <rect width="150" height="28" rx="14" fill="rgba(34,211,238,.11)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="75" y="19" text-anchor="middle" fill="#E0FBFF">React Native</text>
+          </g>
+          <g transform="translate(324,8)">
+            <rect width="110" height="28" rx="14" fill="rgba(139,92,246,.15)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="55" y="19" text-anchor="middle" fill="#E9E7FF">Vite</text>
+          </g>
+          <g transform="translate(450,8)">
+            <rect width="140" height="28" rx="14" fill="rgba(34,211,238,.11)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="70" y="19" text-anchor="middle" fill="#E0FBFF">TypeScript</text>
+          </g>
+          <g transform="translate(606,8)">
+            <rect width="120" height="28" rx="14" fill="rgba(139,92,246,.15)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="60" y="19" text-anchor="middle" fill="#E9E7FF">Node.js</text>
+          </g>
+          <g transform="translate(742,8)">
+            <rect width="130" height="28" rx="14" fill="rgba(34,211,238,.11)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="65" y="19" text-anchor="middle" fill="#E0FBFF">Next.js</text>
+          </g>
+          <g transform="translate(888,8)">
+            <rect width="130" height="28" rx="14" fill="rgba(139,92,246,.15)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="65" y="19" text-anchor="middle" fill="#E9E7FF">Supabase</text>
+          </g>
+        </g>
+
+        <!-- chips row 2 -->
+        <g transform="translate(1060,0)">
+          <g transform="translate(14,8)">
+            <rect width="150" height="28" rx="14" fill="rgba(34,211,238,.11)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="75" y="19" text-anchor="middle" fill="#E0FBFF">PostgreSQL</text>
+          </g>
+          <g transform="translate(184,8)">
+            <rect width="120" height="28" rx="14" fill="rgba(139,92,246,.15)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="60" y="19" text-anchor="middle" fill="#E9E7FF">FastAPI</text>
+          </g>
+          <g transform="translate(320,8)">
+            <rect width="130" height="28" rx="14" fill="rgba(34,211,238,.11)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="65" y="19" text-anchor="middle" fill="#E0FBFF">Socket.IO</text>
+          </g>
+          <g transform="translate(466,8)">
+            <rect width="130" height="28" rx="14" fill="rgba(139,92,246,.15)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="65" y="19" text-anchor="middle" fill="#E9E7FF">WebSockets</text>
+          </g>
+          <g transform="translate(612,8)">
+            <rect width="120" height="28" rx="14" fill="rgba(34,211,238,.11)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="60" y="19" text-anchor="middle" fill="#E0FBFF">RabbitMQ</text>
+          </g>
+          <g transform="translate(748,8)">
+            <rect width="110" height="28" rx="14" fill="rgba(139,92,246,.15)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="55" y="19" text-anchor="middle" fill="#E9E7FF">Nginx</text>
+          </g>
+          <g transform="translate(872,8)">
+            <rect width="90" height="28" rx="14" fill="rgba(34,211,238,.11)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="45" y="19" text-anchor="middle" fill="#E0FBFF">PM2</text>
+          </g>
+          <g transform="translate(974,8)">
+            <rect width="130" height="28" rx="14" fill="rgba(139,92,246,.15)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="65" y="19" text-anchor="middle" fill="#E9E7FF">SSL / TLS</text>
+          </g>
+        </g>
+
+        <!-- chips row 3 -->
+        <g transform="translate(2120,0)">
+          <g transform="translate(14,8)">
+            <rect width="110" height="28" rx="14" fill="rgba(139,92,246,.15)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="55" y="19" text-anchor="middle" fill="#E9E7FF">BDFD</text>
+          </g>
+          <g transform="translate(138,8)">
+            <rect width="180" height="28" rx="14" fill="rgba(34,211,238,.11)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="90" y="19" text-anchor="middle" fill="#E0FBFF">OAuth Discord</text>
+          </g>
+          <g transform="translate(334,8)">
+            <rect width="150" height="28" rx="14" fill="rgba(139,92,246,.15)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="75" y="19" text-anchor="middle" fill="#E9E7FF">RESTful APIs</text>
+          </g>
+          <g transform="translate(504,8)">
+            <rect width="120" height="28" rx="14" fill="rgba(34,211,238,.11)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="60" y="19" text-anchor="middle" fill="#E0FBFF">JSON</text>
+          </g>
+          <g transform="translate(640,8)">
+            <rect width="120" height="28" rx="14" fill="rgba(139,92,246,.15)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="60" y="19" text-anchor="middle" fill="#E9E7FF">CI/CD</text>
+          </g>
+          <g transform="translate(776,8)">
+            <rect width="140" height="28" rx="14" fill="rgba(34,211,238,.11)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="70" y="19" text-anchor="middle" fill="#E0FBFF">Monitoring</text>
+          </g>
+          <g transform="translate(936,8)">
+            <rect width="120" height="28" rx="14" fill="rgba(139,92,246,.15)" stroke="url(#neonGrad)"/>
+            <text class="chipText" x="60" y="19" text-anchor="middle" fill="#E9E7FF">Security</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Loop animation (translate entire lane left) -->
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-2120 0" dur="18s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Subtle bottom border -->
+  <rect x="0" y="319" width="1200" height="1" fill="url(#neonGrad)" opacity="0.65"/>
+</svg>
