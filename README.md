@@ -115,7 +115,30 @@ Mi enfoque es construir aplicaciones **seguras, escalables y con un diseño eleg
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="25"/> Tecnologías & Herramientas
 
-(igual que en inglés, con la tabla de tecnologías)
+
+<table>
+  <tr>
+    <td align="center"><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/><br>React</td>
+    <td align="center"><img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/><br>React Native</td>
+    <td align="center"><img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E"/><br>Vite</td>
+    <td align="center"><img src="https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/><br>TypeScript</td>
+    <td align="center"><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/><br>Node.js</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"/><br>Supabase</td>
+    <td align="center"><img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/><br>PostgreSQL</td>
+    <td align="center"><img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/><br>FastAPI</td>
+    <td align="center"><img src="https://img.shields.io/badge/Socket.IO-010101?style=for-the-badge&logo=socketdotio&logoColor=white"/><br>Socket.IO</td>
+    <td align="center"><img src="https://img.shields.io/badge/WebSockets-FF9800?style=for-the-badge&logo=websocket&logoColor=white"/><br>WebSockets</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white"/><br>RabbitMQ</td>
+    <td align="center"><img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white"/><br>Nginx</td>
+    <td align="center"><img src="https://img.shields.io/badge/PM2-2B037A?style=for-the-badge&logo=pm2&logoColor=white"/><br>PM2</td>
+    <td align="center"><img src="https://img.shields.io/badge/SSL-00599C?style=for-the-badge&logo=letsencrypt&logoColor=white"/><br>EncryptSSL</td>
+    <td align="center"><img src="https://img.shields.io/badge/BDFD-8B5CF6?style=for-the-badge&logo=discord&logoColor=white"/><br>BDFD<br>(BDScript)</td>
+  </tr>
+</table>
 
 ---
 
