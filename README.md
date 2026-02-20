@@ -1,5 +1,4 @@
 <div align="center">
-  <!-- Banner principal (recomendado) -->
   <img src="https://github.com/user-attachments/assets/34e25626-6515-46a0-bb35-753e2c2ff25b" width="100%" alt="MethDevALV Banner (alt)" style="border-radius:10px;" />
 </div>
 <h1 align="center">
@@ -89,7 +88,6 @@ todo con la garra y la honestidad de quien ha tocado el fondo y ha construido su
 ---
 
 ## 🧪 Ecosistema (TODOS los proyectos)
-> Estado según lo mostrado en tu sitio / cards.
 
 <table>
   <tr>
@@ -237,5 +235,4 @@ MethDev is a centralized platform for **Discord tools**, **specialized APIs**, *
 - **Token-based API** (welcome cards / rank cards)
 - **Free plan limits:** 30 req/min and 1,000 req/day
 
-> The “raw” manifesto / origins are kept in Spanish above — that’s the real MethDev voice.
 
